@@ -21,4 +21,19 @@ public class UserServiceImpl implements UserService {
     public List<User> getAllUsers() {
         return dao.selectAllUsers();
     }
+
+    @Override
+    public void deleteById(int id) {
+        dao.removeById(id);
+    }
+
+    @Override
+    public void addUser(User user) {
+        dao.insertUser(user);
+    }
+
+    @Override
+    public void update(User user) {
+        dao.update(user);
+    }
 }
