@@ -17,6 +17,7 @@
                 <td>${user.id}</td>
                 <td>${user.name}</td>
                 <td>${user.age}</td>
+                <td>
                     <a href="/delete?id=${user.id}">Delete</a>
                     <a href="/update?id=${user.id}&name=${user.name}&age=${user.age}">Update</a>
                 </td>
